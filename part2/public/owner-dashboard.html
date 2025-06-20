@@ -104,7 +104,8 @@
           const meRes = await fetch('api/users/me');
           if (!meRes.ok) throw new Error('wasnt able to get /api/users/me')
           const me = await meRes.json();
-          const dogsRes = await fetch(`/api/owners/${me.user_id}/dogs`)
+          const dogsRes = await fetch(`/api/owners/${me.user_id}/dogs`);
+          if(!dogsRes.ok) throw
 
           dogs.value = await fetch(`/api/owners/${ownerId}/dogs`).then(r => r.json());
         }
