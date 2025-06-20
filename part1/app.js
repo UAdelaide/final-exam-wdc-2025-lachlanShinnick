@@ -25,6 +25,6 @@ async function main() {
         }
     });
 
-    app.listen(3000, () => console.log('liste'))
+    app.listen(3000, () => console.log('listening on httP://localhost:3000'));
 
 }
