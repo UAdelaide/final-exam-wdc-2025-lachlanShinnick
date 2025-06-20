@@ -6,6 +6,7 @@ require('dotenv').config();
 const app = express();
 
 // session middleware
+// sets up co
 app.use(session({
     name: 'dogwalk.sid',
     secret: 'secret',
