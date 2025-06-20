@@ -102,7 +102,7 @@
 
         async function loadDogs() {
           const meRes = await fetch('api/users/me');
-          if (!meRes.ok) throw new Error('N')
+          if (!meRes.ok) throw new Error('wasnt able to get /api/users/me')
 
           dogs.value = await fetch(`/api/owners/${ownerId}/dogs`).then(r => r.json());
         }
