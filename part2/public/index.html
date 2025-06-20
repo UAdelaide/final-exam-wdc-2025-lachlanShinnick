@@ -42,7 +42,9 @@
             body: JSON.stringify({ email, passsword })
           });
 
-          if (!res.ok) throw 
+          if (!res.ok) throw new Error('Invalid credentials');
+          const { user } = await res.json();
+          if ()
         }
         )
       }
