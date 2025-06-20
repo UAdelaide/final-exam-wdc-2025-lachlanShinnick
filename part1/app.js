@@ -43,9 +43,9 @@ async function main() {
             res.json(rows);
         } catch (err) {
             console.error('GET /api/walkrequests/open error', err);
-            res.status(500).json({ error : 'Failed to fetch open walk requests'})
+            res.status(500).json({ error : 'Failed to fetch open walk requests'});
         }
-    })
+    });
 
     app.listen(3000, () => console.log('listening on http://localhost:3000'));
 
