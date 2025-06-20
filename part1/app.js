@@ -70,7 +70,9 @@ async function main() {
                 GROUP BY u.user_id, u.username
                 `);
                 res.json(rows);
-        } catch (err)
+        } catch (err) {
+            console.error('GET /api/walkers/summary error:', err)
+        }
     })
 
     app.listen(3000, () => console.log('listening on http://localhost:3000'));
