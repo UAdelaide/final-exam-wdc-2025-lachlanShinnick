@@ -21,7 +21,7 @@ async function main() {
                 `);
                 res.json(rows);
         } catch (err) {
-            console.log()
+            console.error('GET /api/dogs' err);
             res.status(500).json({error : 'Failed to fetch dogs'});
         }
     });
