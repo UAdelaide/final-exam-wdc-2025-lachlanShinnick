@@ -61,7 +61,9 @@ async function main() {
                             THEN 1 ELSE 0
                         END
                     )
-                FROM
+                FROM Users u
+                LEFT JOIN WalkRatings r
+                    
                 `)
         }
     })
