@@ -21,7 +21,8 @@ async function main() {
                 ');
                 res.json(rows);
         } catch {
-            res.status(500).json({error : 'Fa'})
+            res.status(500).json({error : 'Failed to fetch dogs'});
         }
-    }
+    });
+    
 }
