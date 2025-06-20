@@ -5,10 +5,10 @@
         <title>Dog Walk Service - Dog of the day</title>
         <script src = "https://unpkg.com/vue@3"></script>
 </head>
-        <body>
-            <div id = "app">
-                <h1> Dog of the Day </h1>
-                <div class = "dog-info">
+    <body>
+        <div id = "app">
+            <h1> Dog of the Day </h1>
+            <div class = "dog-info">
                     <img :src="dog.image" alt="Random dog of the day" />
                     <p>Name: {{ dog.name }}</p>
                     <button @click="fetchDog">Refresh</button>
