@@ -36,7 +36,8 @@ async function main() {
                     wr.location,
                     u.username
                 FROM WalkRequests wr
-                
+                JOIN Dogs d ON wr.dog_id = d.dog_id
+                JOIN 
             `)
         }
     })
