@@ -52,7 +52,7 @@ async function main() {
             const [rows] = await pool.query(`
                 SELECT
                     u.username AS walker_username,
-                    COUNT (r.rating) AS total_ratings,
+                    COUNT(r.rating) AS total_ratings,
                     AVG(r.rating) AS average_rating,
                     SUM(
                         CASE
