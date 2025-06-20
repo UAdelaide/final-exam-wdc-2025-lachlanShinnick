@@ -47,7 +47,11 @@ async function main() {
         }
     });
 
-    app.get('/api/walkers/summary')
+    app.get('/api/walkers/summary', async (req, res) => {
+        try {
+            const [rows] 
+        }
+    })
 
     app.listen(3000, () => console.log('listening on http://localhost:3000'));
 
