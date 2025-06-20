@@ -137,4 +137,5 @@ UPDATE WalkRequests
     WHERE request_id IN (1, 3);
 
 INSERT INTO WalkRatings (request_id, walker_id, owner_id, rating, comments) VALUES
-    )
+    (1,
+    (SELECT user_id FROM ))
