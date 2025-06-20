@@ -140,4 +140,6 @@ INSERT INTO WalkRatings (request_id, walker_id, owner_id, rating, comments) VALU
     (1,
     (SELECT user_id FROM Users WHERE username = 'bobwalker'),
     (SELECT user_id FROM Users WHERE username = 'alice123'),
-    5, )
+    5,
+    'Great walk!'),
+    ()
