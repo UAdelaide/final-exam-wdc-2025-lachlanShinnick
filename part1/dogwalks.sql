@@ -139,4 +139,5 @@ UPDATE WalkRequests
 INSERT INTO WalkRatings (request_id, walker_id, owner_id, rating, comments) VALUES
     (1,
     (SELECT user_id FROM Users WHERE username = 'bobwalker'),
-    SELECT user_id FROM )
+    (SELECT user_id FROM Users WHERE username = 'alice123'),
+    5, )
