@@ -91,7 +91,7 @@
 
         onMounted(() => {
           loadWalkRequests();
-          getCurrentUser();
+          getCurrentUser().then(loadWalkRequests).catch(err => error.value = err.message);
         });
 
         return {
