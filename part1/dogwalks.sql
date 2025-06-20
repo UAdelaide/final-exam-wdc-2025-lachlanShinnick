@@ -65,7 +65,7 @@ INSERT INTO Dogs (owner_id, name, size) VALUES
     (
         (SELECT user_id FROM Users WHERE username = 'alice123'),
         'Max',
-        'Medium'
+        'medium'
     ),
     (
         (SELECT user_id FROM Users WHERE username = 'carol123'),
