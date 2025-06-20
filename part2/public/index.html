@@ -50,12 +50,15 @@
           // handle invalid credentials
           if (!res.ok) throw new Error('Invalid credentials');
           const { user } = await res.json();
+
+          // redirect based on role
           if (user.role === 'owner') {
             window.location.href = '/owner-dashboard.html';
           } else {
             window.location.href = '/walker-dashboard.html';
           }
         } catch (err) {
+          // errir message in case of login failure
           errorDiv.textContent = err.message;
           errorDiv.classList.remove('d-none');
         }
