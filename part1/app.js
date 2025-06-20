@@ -37,7 +37,8 @@ async function main() {
                     u.username
                 FROM WalkRequests wr
                 JOIN Dogs d ON wr.dog_id = d.dog_id
-                JOIN 
+                JOIN Users u ON d.owner_id = u.user_id
+                WHERE wr.status = 
             `)
         }
     })
