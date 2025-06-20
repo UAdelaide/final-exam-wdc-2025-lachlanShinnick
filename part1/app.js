@@ -32,7 +32,11 @@ async function main() {
                     wr.request_id,
                     d.name AS dog_name,
                     wr.requested_time,
-                    wr.
+                    wr.duration_minutes,
+                    wr.location,
+                    u.username
+                FROM WalkRequests wr
+                
             `)
         }
     })
