@@ -56,7 +56,10 @@ async function main() {
                 AVG(r.rating) AS average_rating,
                 SUM(
                     CASE
-                        WHEN wr.statu
+                        WHEN wr.status = 'completed
+                        AND wa.status = 'accepted'
+                        THEN 1 ELSE 0
+                        END
                 )
                 `)
         }
