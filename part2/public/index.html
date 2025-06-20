@@ -46,13 +46,12 @@
           if (user.role === 'owner') {
             window.location.href = '/owner-dashboard.html';
           } else {
-            window.location.href = '/walker-dashboard.html'
+            window.location.href = '/walker-dashboard.html';
           }
         } catch (err) {
           errorDiv.textContent = err.message;
           errorDiv.classList.remove('d-none');
         }
-        );
       }
       </script>
 </body>
