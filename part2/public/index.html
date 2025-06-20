@@ -46,7 +46,11 @@
           const { user } = await res.json();
           if (user.role === 'owner') {
             window.location.href = '/owner-dashboard.html';
-          } else 
+          } else {
+            window.location.href = '/walker-dashboard.html'
+          }
+        } catch (err) {
+          
         }
         )
       }
