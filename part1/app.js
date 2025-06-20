@@ -14,7 +14,8 @@ async function main() {
 
     app.get('api/dogs', async (req, res) => {
         try {
-            const 
+            const [rows] = await pool.query('
+                ')
         }
     }
 }
