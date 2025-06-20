@@ -21,7 +21,7 @@ async function main() {
                 ');
                 res.json(rows);
         } catch {
-            
+            res.status(500).json({error : 'Fa'})
         }
     }
 }
