@@ -45,8 +45,8 @@
           if (!res.ok) throw new Error('Invalid credentials');
           const { user } = await res.json();
           if (user.role === 'owner') {
-            window.location.
-          }
+            window.location.href = '/owner-dashboard.html';
+          } else 
         }
         )
       }
