@@ -17,8 +17,10 @@
                 <script>
                     const { createApp } = Vue;
                     createApp({
-                        data()
-                        return { dog: { name: 'Fluffy', image : ' '} };
+                        data() {
+                            return { dog: { name: 'Fluffy', image : ' '} };
+                        }
+
                     },
                     mounted() {
                         this.fetchDog();
