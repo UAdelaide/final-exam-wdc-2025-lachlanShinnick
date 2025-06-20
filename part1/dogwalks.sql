@@ -88,4 +88,7 @@ INSERT INTO Dogs (owner_id, name, size) VALUES
         'medium'
     );
 
-INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status)
+INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status) VALUES
+    (
+        
+    )
