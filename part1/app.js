@@ -42,7 +42,8 @@ async function main() {
             `);
             res.json(rows);
         } catch (err) {
-            console.error('GET /api')
+            console.error('GET /api/walkrequests/open error', err);
+            res.status
         }
     })
 
