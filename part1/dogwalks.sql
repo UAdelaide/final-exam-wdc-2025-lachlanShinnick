@@ -133,4 +133,7 @@ INSERT INTO WalkApplications (request_id, walker_id, status) VALUES
 
 
 UPDATE WalkRequests
-    SET 
+    SET status = 'completed'
+    WHERE request_id IN (1, 3);
+
+INSERT INTO WalkRatings 
