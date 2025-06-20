@@ -105,8 +105,9 @@
               }));
             }
 
-            onMounted(loadDogs)
+            onMounted(loadDogs);
+            return { dogs };
           }
-        })
+        }).mount('#dogs-app')
 </body>
 </html>
