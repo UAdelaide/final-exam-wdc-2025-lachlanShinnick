@@ -12,5 +12,5 @@ async function main() {
     await seed();
     const app = express();
 
-    app.get*'api/dogs'
+    app.get('api/dogs', async ()
 }
