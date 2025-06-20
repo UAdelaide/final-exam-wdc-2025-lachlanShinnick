@@ -96,7 +96,8 @@
             const dogs = ref([]);
 
             async function loadDogs() {
-              const res = await fetch
+              const res = await fetch('/api/dogs');
+              dogs.value = a
             }
           }
         })
