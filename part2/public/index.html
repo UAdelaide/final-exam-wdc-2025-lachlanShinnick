@@ -31,6 +31,8 @@
     document.getElementById('login-form')
       .addEventListener('submit', async function(e) {
         e.preventDefault();
+
+        // hide the message error
         const errorDiv = document.getElementById('error');
         errorDiv.classList.add('d-none');
 
