@@ -5,5 +5,7 @@ module.exports = mysql.createPool({
     user                : 'root',
     database            : 'DogWalkService',
     waitForConnections  : true,
-    connectionLimit     
+    connectionLimit     : 10,
+    queueLimit          : 0,
+    multipleStatements   true
 })
