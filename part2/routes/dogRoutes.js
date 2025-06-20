@@ -1,3 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../models.d')
+const db = require('../models.db');
+
+//GET /api/owners/:ownerId/
