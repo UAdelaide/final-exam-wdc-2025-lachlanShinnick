@@ -20,7 +20,10 @@ router.get('/owners/:ownerId/dogs', async (req, res) => {
 
 router.get('/dogs', async (req, res) => {
     try {
-        const [rows] =
+        const [rows] = await db.query('
+            SELECT
+            
+            ')
     }
 })
 
