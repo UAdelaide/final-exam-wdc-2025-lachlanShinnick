@@ -119,8 +119,8 @@ INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, st
     ),
     (
         (SELECT dog_id FROM Dogs WHERE name = 'TheKing'),
-        '2025-06-12 16:00:00',
+        '2025-06-12 16:30:00',
         30,
-        'Parklands',
-        'open'
-    ),
+        'Adelaide Hills',
+        'cancelled'
+    );
