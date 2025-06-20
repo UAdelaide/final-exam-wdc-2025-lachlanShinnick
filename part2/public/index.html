@@ -28,11 +28,11 @@
     <h2 class="mt-5 mb-4">All Registered Dogs</h2>
     <div id="dogs-app">
       <table class="table table-striped" v-if="dogs.length">
-        <thread>
+        <thead>
           <tr>
             <th>Dog ID</th><th>Name</th><th>Size</th><th>Owner</th><th>Photo</th>
           </tr>
-        </thread>
+        </thead>
         <tbody>
           <tr v-for="dog in dogs" :key="dog.dog_id">
             <td>{{ dog.dog_id }}</td>
