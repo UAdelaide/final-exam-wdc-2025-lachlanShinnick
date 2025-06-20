@@ -97,7 +97,9 @@
 
             async function loadDogs() {
               const res = await fetch('/api/dogs');
-              dogs.value = a
+              dogs.value = await res.json();
+
+              await Promise.all(dogs.value)
             }
           }
         })
