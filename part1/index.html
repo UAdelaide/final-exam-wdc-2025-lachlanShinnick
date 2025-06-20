@@ -19,19 +19,19 @@
                 createApp({
                 data() {
                     return { dog: { name: 'Fluffy', image : ''} };
-                        },
-                        mounted() {
-                            this.fetchDog();
-                        },
-                        methods: {
-                            fetchDog() {
-                                fetch('https://dog.ceo/api/breeds/image/random')
-                                .then(res => res.json())
-                                .then(data => {
-                                    this.dog.image = data.message;
-                                })
-                            }
-                        }}).mount('#app');
+                    },
+                    mounted() {
+                        this.fetchDog();
+                    },
+                    methods: {
+                        fetchDog() {
+                            fetch('https://dog.ceo/api/breeds/image/random')
+                            .then(res => res.json())
+                            .then(data => {
+                                this.dog.image = data.message;
+                            })
+                        }
+                    }}).mount('#app');
                 </script>
             </body>
         </html>
