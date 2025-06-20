@@ -2,4 +2,6 @@ const express = require('express');
 const router = express.Router();
 const db = require('../models.db');
 
-//GET /api/owners/:ownerId/
+//GET /api/owners/:ownerId/dogs
+
+router.get('owners/;ownerId/dogs', as)
