@@ -4,7 +4,7 @@ const db = require('../models/db');
 
 //GET /api/owners/:ownerId/dogs
 
-router.get('owners/:ownerId/dogs', async (req, res => {
+router.get('/owners/:ownerId/dogs', async (req, res) => {
     const { ownerId } = req.params;
 
     try {
@@ -16,6 +16,6 @@ router.get('owners/:ownerId/dogs', async (req, res => {
     } catch (err) {
         res.status(500).json({ error: 'Failed to load dogs' });
     }
-}));
+});
 
 module.exports = router;
