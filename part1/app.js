@@ -20,7 +20,8 @@ async function main() {
                 JOIN Users u ON d.owner_id = u.user_id
                 `);
                 res.json(rows);
-        } catch {
+        } catch (err) {
+            console.log()
             res.status(500).json({error : 'Failed to fetch dogs'});
         }
     });
