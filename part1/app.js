@@ -72,9 +72,9 @@ async function main() {
                 res.json(rows);
         } catch (err) {
             console.error('GET /api/walkers/summary error:', err);
-            res.status(500).json({ error: 'Failed to fetch walker summary'})
+            res.status(500).json({ error: 'Failed to fetch walker summary'});
         }
-    })
+    });
 
     app.listen(3000, () => console.log('listening on http://localhost:3000'));
 
