@@ -66,7 +66,7 @@ async function main() {
                     ON u.user_id = r.walker_id
                 LEFT JOIN WalkRequests wr
                     ON wa.request_id = wr.request_id
-                WHERE u.role = 'walker
+                WHERE u.role = 'walker'
                 GROUP BY u.user_id, u.username
                 `);
                 res.json(rows);
