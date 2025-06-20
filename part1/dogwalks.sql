@@ -127,4 +127,4 @@ INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, st
 
 -- TEST DATA for /api/walkers/summary
 
-INSERT
+INSERT INTO WalkApplications (request_id, walker_id, status) 
