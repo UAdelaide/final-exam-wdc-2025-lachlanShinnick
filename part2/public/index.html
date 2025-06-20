@@ -50,7 +50,8 @@
             window.location.href = '/walker-dashboard.html'
           }
         } catch (err) {
-          
+          errorDiv.textContent = err.message;
+          err
         }
         )
       }
