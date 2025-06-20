@@ -128,4 +128,5 @@ INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, st
 -- TEST DATA for /api/walkers/summary
 
 INSERT INTO WalkApplications (request_id, walker_id, status) VALUES
-    (1, )
+    (1, (SELECT user_id FROM Users Where username = 'bobwalker'), 'accepted'),
+    
