@@ -1,3 +1,6 @@
 const mysql2 = require('mysql2/promise');
 
-module.exports = mysql
+module.exports = mysql.createPool({
+    host        : 'localhost'
+    
+})
