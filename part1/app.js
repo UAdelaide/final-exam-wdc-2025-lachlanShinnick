@@ -26,7 +26,11 @@ async function main() {
     });
 
     app.get('api/walkrequests/open', async (req, res) => {
-        
+        try {
+            const [rows] = await pool.query(`
+
+                `)
+        }
     })
 
     app.listen(3000, () => console.log('listening on http://localhost:3000'));
