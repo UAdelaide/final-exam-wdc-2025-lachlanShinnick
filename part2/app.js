@@ -6,7 +6,7 @@ require('dotenv').config();
 const app = express();
 
 // session middleware
-// sets up co
+// sets up cookie based session, so we can remember who is logged in
 app.use(session({
     name: 'dogwalk.sid',
     secret: 'secret',
