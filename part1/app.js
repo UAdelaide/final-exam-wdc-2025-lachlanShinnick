@@ -29,7 +29,10 @@ async function main() {
         try {
             const [rows] = await pool.query(`
                 SELECT
-                    wr.request_id, 
+                    wr.request_id,
+                    d.name AS dog_name,
+                    wr.requested_time,
+                    wr.
             `)
         }
     })
