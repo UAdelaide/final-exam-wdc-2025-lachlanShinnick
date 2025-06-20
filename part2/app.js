@@ -4,7 +4,10 @@ require('dotenv').config();
 
 const app = express();
 
-
+// session middleware
+app.use(session({
+    name: 'dogwalk.sid'
+}))
 // Middleware
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
