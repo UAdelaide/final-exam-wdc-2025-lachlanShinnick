@@ -36,16 +36,18 @@
         const errorDiv = document.getElementById('error');
         errorDiv.classList.add('d-none');
 
+        // get login credentials
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
 
         try {
+          // send login request
           const res = await fetch('/api/users/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password })
           });
-
+          // handle invalid credentials
           if (!res.ok) throw new Error('Invalid credentials');
           const { user } = await res.json();
           if (user.role === 'owner') {
