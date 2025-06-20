@@ -60,7 +60,7 @@ async function main() {
                             AND wa.status = 'accepted'
                             THEN 1 ELSE 0
                         END
-                    ) AS completed_walks
+                    ) + 0 AS completed_walks
                 FROM Users u
                 LEFT JOIN WalkRatings r
                     ON u.user_id = r.walker_id
