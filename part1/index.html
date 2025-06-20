@@ -9,17 +9,16 @@
         <div id = "app">
             <h1> Dog of the Day </h1>
             <div class = "dog-info">
-                    <img :src="dog.image" alt="Random dog of the day" />
-                    <p>Name: {{ dog.name }}</p>
-                    <button @click="fetchDog">Refresh</button>
-                </div>
+                <img :src="dog.image" alt="Random dog of the day" />
+                <p>Name: {{ dog.name }}</p>
+                <button @click="fetchDog">Refresh</button>
             </div>
-
-                <script>
-                    const { createApp } = Vue;
-                    createApp({
-                        data() {
-                            return { dog: { name: 'Fluffy', image : ''} };
+        </div>
+            <script>
+                const { createApp } = Vue;
+                createApp({
+                data() {
+                    return { dog: { name: 'Fluffy', image : ''} };
                         },
                         mounted() {
                             this.fetchDog();
