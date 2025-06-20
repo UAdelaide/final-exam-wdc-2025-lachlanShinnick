@@ -99,7 +99,7 @@
           const user = jSON.parse(localStorage.getItem('user'));
           const ownerId = user.user_id;
 
-          dogs.value = await fetch('/api/owners/$(ownerId)/dogs').then(r => r.json())
+          dogs.value = await fetch('/api/owners/$(ownerId)/dogs').then(r => r.json());
         }
 
         async function loadWalks() {
@@ -143,6 +143,7 @@
 
         return {
           form,
+          dogs,
           walks,
           message,
           error,
