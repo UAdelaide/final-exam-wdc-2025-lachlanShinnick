@@ -37,7 +37,8 @@
 
         try {
           const res = await fetch('/api/users/login', {
-            method
+            method: 'POST',
+            headers: { 'Content-Type'}
           })
         }
         )
