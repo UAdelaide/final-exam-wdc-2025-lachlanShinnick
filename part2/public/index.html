@@ -44,7 +44,9 @@
 
           if (!res.ok) throw new Error('Invalid credentials');
           const { user } = await res.json();
-          if ()
+          if (user.role === 'owner') {
+            window.location.
+          }
         }
         )
       }
