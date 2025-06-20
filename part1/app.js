@@ -25,7 +25,7 @@ async function main() {
         }
     });
 
-    
+    app.get('api/walkrequests/open', )
 
     app.listen(3000, () => console.log('listening on http://localhost:3000'));
 
