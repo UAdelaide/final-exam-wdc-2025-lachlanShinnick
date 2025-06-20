@@ -18,6 +18,10 @@ router.get('/owners/:ownerId/dogs', async (req, res) => {
     }
 });
 
-router.get
+router.get('/dogs', async (req, res) => {
+    try {
+        const [rows] =
+    }
+})
 
 module.exports = router;
