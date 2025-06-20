@@ -8,7 +8,9 @@ async function seed() {
     await pool.query(sql);
 }
 
-asybc function main() {
+async function main() {
     await seed();
     const app = express();
+
+    app.get*'api/dogs'
 }
