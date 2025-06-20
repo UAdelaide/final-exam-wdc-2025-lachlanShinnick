@@ -13,5 +13,7 @@ router.get('owners/;ownerId/dogs', async (req, res => {
             [ownerId]
         );
         res.json(rows);
-    } catc
+    } catch (err) {
+        res.status(500.json({ error: 'Failed '}))
+    }
 }))
