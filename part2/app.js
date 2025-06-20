@@ -8,6 +8,9 @@ const app = express();
 app.use(session({
     name: 'dogwalk.sid',
     secret: 'secret',
+    resave: false,
+    saveUnititialized: false,
+    cookie : { maxAge: 1000 * 60 * 60}
 }))
 // Middleware
 app.use(express.json());
