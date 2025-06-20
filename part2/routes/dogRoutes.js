@@ -7,10 +7,11 @@ const db = require('../models.db');
 router.get('owners/;ownerId/dogs', async (req, res => {
     const { ownerId } = req.params;
 
-    try{
+    try {
         const [rows] = await db.query(
             'SELECT dog_id, name, size, FROM Dogs WHERE owner_id = ?',
             [ownerId]
-        )
-    }
+        );
+        res.json(rows);
+    } catc
 }))
