@@ -101,7 +101,7 @@
         const dogs = ref([]);
 
         async function loadDogs() {
-          const user = jSON.parse(localStorage.getItem('user'));
+          const user = JSON.parse(localStorage.getItem('user'));
           const ownerId = user.user_id;
 
           dogs.value = await fetch(`/api/owners/$(ownerId)/dogs`).then(r => r.json());
