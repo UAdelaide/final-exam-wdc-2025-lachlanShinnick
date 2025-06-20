@@ -1,6 +1,6 @@
 const express = require('express');
 const fs = require('fs');
-const path = reequire('path');
+const path = require('path');
 const pool = require('./db');
 
 async function seed() {
@@ -24,5 +24,5 @@ async function main() {
             res.status(500).json({error : 'Failed to fetch dogs'});
         }
     });
-    
+
 }
