@@ -129,4 +129,8 @@ INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, st
 
 INSERT INTO WalkApplications (request_id, walker_id, status) VALUES
     (1, (SELECT user_id FROM Users Where username = 'bobwalker'), 'accepted'),
-    
+    (3, (SELECT user_id FROM Users Where username = 'bobwalker'), 'accepted');
+
+
+UPDATE WalkRequests
+    SET 
