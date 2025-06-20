@@ -4,4 +4,6 @@ const db = require('../models.db');
 
 //GET /api/owners/:ownerId/dogs
 
-router.get('owners/;ownerId/dogs', as)
+router.get('owners/;ownerId/dogs', async (req, res => {
+    const { ownerId } = req.
+}))
