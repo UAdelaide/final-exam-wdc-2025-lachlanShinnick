@@ -10,7 +10,7 @@ app.use(session({
     name: 'dogwalk.sid',
     secret: 'secret',
     resave: false,
-    saveUnititialized: false,
+    saveUninitialized: false,
     cookie : { maxAge: 1000 * 60 * 60}
 }))
 // Middleware
