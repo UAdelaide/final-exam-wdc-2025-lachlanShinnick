@@ -1,3 +1,3 @@
 
 
-async
+async function seed() 
