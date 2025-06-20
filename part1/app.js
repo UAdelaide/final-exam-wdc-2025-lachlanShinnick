@@ -53,7 +53,7 @@ async function main() {
                 SELECT
                     u.username AS walker_username,
                     CAST(COUNT(r.rating) AS UNSIGNED) AS total_ratings,
-                    AVG(r.rating) + 0 AS average_rating,
+                    CAST(AVG(r.rating) AS DECIMAL(10,2) AS average_rating,
                     SUM(
                         CASE
                             WHEN wr.status = 'completed'
