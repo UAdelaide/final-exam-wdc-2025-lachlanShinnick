@@ -20,7 +20,7 @@ router.get('/owners/:ownerId/dogs', async (req, res) => {
 
 router.get('/dogs', async (req, res) => {
     try {
-        const [rows] = await db.query('
+        const [rows] = await db.query(`
             SELECT
                 d.dog_id,
                 d.name,
@@ -28,7 +28,7 @@ router.get('/dogs', async (req, res) => {
                 u.username AS owner_username
             FROM Dogs d
             JOIN Users u ON d.owner_id = u.user_id
-            ');
+            `);
             res.json(rows);
     } catch (err) {
         console.error('Failed to fetch all dogs:', err);
