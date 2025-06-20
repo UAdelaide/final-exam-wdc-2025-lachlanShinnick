@@ -12,7 +12,7 @@ async function main() {
     await seed();
     const app = express();
 
-    app.get('api/dogs', async (req, res) => {
+    app.get('/api/dogs', async (req, res) => {
         try {
             const [rows] = await pool.query('
                 SELECT d.name AS dog_name, d.size, u.username AS owner_username
