@@ -124,3 +124,7 @@ INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, st
         'Adelaide Hills',
         'cancelled'
     );
+
+-- TEST DATA for /api/walkers/summary
+
+INSERT
