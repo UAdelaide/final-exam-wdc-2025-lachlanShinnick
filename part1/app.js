@@ -25,7 +25,9 @@ async function main() {
         }
     });
 
-    app.get('api/walkrequests/open', )
+    app.get('api/walkrequests/open', async (req, res) => {
+        
+    })
 
     app.listen(3000, () => console.log('listening on http://localhost:3000'));
 
