@@ -18,4 +18,6 @@ router.get('/owners/:ownerId/dogs', async (req, res) => {
     }
 });
 
+router.get
+
 module.exports = router;
