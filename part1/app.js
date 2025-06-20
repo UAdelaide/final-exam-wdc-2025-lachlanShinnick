@@ -68,8 +68,9 @@ async function main() {
                     ON wa.request_id = wr.request_id
                 WHERE u.role = 'walker
                 GROUP BY u.user_id, u.username
-                `)
-        }
+                `);
+                res.json(rows);
+        } catch (err)
     })
 
     app.listen(3000, () => console.log('listening on http://localhost:3000'));
