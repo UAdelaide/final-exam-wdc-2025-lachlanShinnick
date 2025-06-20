@@ -49,7 +49,10 @@ async function main() {
 
     app.get('/api/walkers/summary', async (req, res) => {
         try {
-            const [rows] = await pool.query)
+            const [rows] = await pool.query(`
+                SELECT
+                u.userna
+                `)
         }
     })
 
