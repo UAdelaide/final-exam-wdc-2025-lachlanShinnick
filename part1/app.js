@@ -17,7 +17,7 @@ async function main() {
             const [rows] = await pool.query(`
                 SELECT d.name AS dog_name, d.size, u.username AS owner_username
                 FROM Dogs d
-                JOIN Users u ON owner_id = u.user_id
+                JOIN Users u ON d.owner_id = u.user_id
                 `);
                 res.json(rows);
         } catch {
@@ -25,7 +25,7 @@ async function main() {
         }
     });
 
-    app.listen(3000, () => console.log('listening on httP://localhost:3000'));
+    app.listen(3000, () => console.log('listening on http://localhost:3000'));
 
 }
 
