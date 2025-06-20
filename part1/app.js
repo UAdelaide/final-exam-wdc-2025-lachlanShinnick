@@ -13,7 +13,7 @@ async function main() {
     const app = express();
 
     app.get('/api/dogs', async (req, res) => {
-        try
+        try {
             const [rows] = await pool.query(`
                 SELECT d.name AS dog_name, d.size, u.username AS owner_username
                 FROM Dogs d
@@ -24,7 +24,7 @@ async function main() {
             res.status(500).json({error : 'Failed to fetch dogs'});
         }
     );
-
+}
     app.listen(3000, () => console.log('listening on httP://localhost:3000'));
 
 }
