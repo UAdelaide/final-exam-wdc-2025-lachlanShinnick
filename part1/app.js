@@ -63,7 +63,10 @@ async function main() {
                     ) AS completed_walks
                 FROM Users u
                 LEFT JOIN WalkRatings r
-                    ON u.user_id = r.walker
+                    ON u.user_id = r.walker_id
+                LEFT JOIN WalkRequests wr
+                    ON wa.request_id = wr.request_id
+                WHERE 
                 `)
         }
     })
