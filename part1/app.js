@@ -25,7 +25,7 @@ async function main() {
         }
     });
 
-    app.get('api/walkrequests/open', async (req, res) => {
+    app.get('/api/walkrequests/open', async (req, res) => {
         try {
             const [rows] = await pool.query(`
                 SELECT
