@@ -81,7 +81,7 @@
         });
 
         async function logout() {
-          await 
+          await fetch('api/users/logout', { method: 'POST' })
         }
 
         const walks = ref([]);
