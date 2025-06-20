@@ -14,6 +14,8 @@ router.get('owners/;ownerId/dogs', async (req, res => {
         );
         res.json(rows);
     } catch (err) {
-        res.status(500.json({ error: 'Failed '}))
+        res.status(500.json({ error: 'Failed to load dogs' }));
     }
-}))
+}));
+
+module.exports = router
