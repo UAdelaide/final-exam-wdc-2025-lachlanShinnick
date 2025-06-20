@@ -63,5 +63,7 @@ INSERT INTO Users (username, email, password_hash, role) VALUES
 
 INSERT INTO Dogs (owner_id, name, size) VALUES
     (
-        (SELECT user_)
+        (SELECT user_id FROM Users WHERE username = 'alice123'),
+        'Max', 
+        
     )
