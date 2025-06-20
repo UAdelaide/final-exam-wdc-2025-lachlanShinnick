@@ -43,7 +43,7 @@ async function main() {
             res.json(rows);
         } catch (err) {
             console.error('GET /api/walkrequests/open error', err);
-            res.status
+            res.status(500).json({ error : 'Failed to fetch open walk requests'})
         }
     })
 
