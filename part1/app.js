@@ -54,7 +54,10 @@ async function main() {
                 u.username AS walker_username,
                 COUNT (r.rating) AS total_ratings,
                 AVG(r.rating) AS average_rating,
-                SUM()
+                SUM(
+                    CASE
+                        WHEN wr.statu
+                )
                 `)
         }
     })
