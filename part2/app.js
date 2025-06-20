@@ -6,7 +6,8 @@ const app = express();
 
 // session middleware
 app.use(session({
-    name: 'dogwalk.sid'
+    name: 'dogwalk.sid',
+    secret: 'secret',
 }))
 // Middleware
 app.use(express.json());
