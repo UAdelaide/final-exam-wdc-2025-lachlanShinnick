@@ -77,3 +77,8 @@ INSERT INTO Dogs (owner_id, name, size) VALUES
         'MichaelJordan',
         'small'
     ),
+    (
+        (SELECT user_id FROM Users WHERE username = 'lachyshinnick'),
+        'Bella',
+        'small'
+    ),
