@@ -14,12 +14,12 @@
                 <button @click="fetchDog">Refresh</button>
             </div>
         </div>
-            <script>
-                const { createApp } = Vue;
-                createApp({
-                data() {
-                    return { dog: { name: 'Fluffy', image : ''} };
-                    },
+        <script>
+            const { createApp } = Vue;
+            createApp({
+            data() {
+                return { dog: { name: 'Fluffy', image : ''} };
+                },
                     mounted() {
                         this.fetchDog();
                     },
@@ -32,6 +32,6 @@
                             })
                         }
                     }}).mount('#app');
-                </script>
-            </body>
-        </html>
+            </script>
+    </body>
+</html>
