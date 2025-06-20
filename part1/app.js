@@ -1,6 +1,7 @@
 const express = require('express');
-const fs = require('fs')
-const path = reequire('path')
+const fs = require('fs');
+const path = reequire('path');
+const pool = require('./db');
 
 async function seed() {
     const sql = fs.readFileSync(path.join(__dirname, 'dogwalks.sql'), 'utf8');
