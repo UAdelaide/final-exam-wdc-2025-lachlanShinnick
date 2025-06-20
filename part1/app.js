@@ -47,6 +47,8 @@ async function main() {
         }
     });
 
+    app.get
+
     app.listen(3000, () => console.log('listening on http://localhost:3000'));
 
 }
