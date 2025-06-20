@@ -23,8 +23,9 @@ async function main() {
         } catch {
             res.status(500).json({error : 'Failed to fetch dogs'});
         }
+    }
     );
-}
+
     app.listen(3000, () => console.log('listening on httP://localhost:3000'));
 
 }
