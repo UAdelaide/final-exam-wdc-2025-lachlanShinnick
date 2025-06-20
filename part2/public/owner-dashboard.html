@@ -19,6 +19,7 @@
     <div class="card mb-4">
       <div class="card-header bg-primary text-white">
         Create New Walk Request
+      </div>
       <div class="card-body">
         <form @submit.prevent="submitWalkRequest">
           <div class="mb-3">
@@ -100,7 +101,7 @@
         const dogs = ref([]);
 
         async function loadDogs() {
-          const meRes = await fetch('/api/users/me');
+          const meRes = await fetch('api/users/me');
           if (!meRes.ok) throw new Error('wasnt able to get /api/users/me')
           const me = await meRes.json();
           const dogsRes = await fetch(`/api/owners/${me.user_id}/dogs`);
