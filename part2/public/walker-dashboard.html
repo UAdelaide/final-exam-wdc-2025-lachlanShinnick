@@ -54,6 +54,7 @@
           if (!res.ok) throw new Error('Not logged in');
           const user = await res.json();
           userId.value = user.user_id;
+          console.log(userId.value)
         }
         async function logout() {
           await fetch('/api/users/logout', { method: 'POST' });
